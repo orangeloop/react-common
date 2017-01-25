@@ -2,7 +2,7 @@
   "name": "react-common",
   "version": "0.0.1",
   "description": "",
-  "main": "dist/react-common.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "gulp",
     "lint": "gulp lint",
@@ -27,6 +27,8 @@
     "babel-loader": "6.2.5",
     "babel-polyfill": "6.13.0",
     "babel-preset-latest": "6.14.0",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
     "babel-register": "6.14.0",
     "chai": "3.5.0",
     "del": "2.2.2",
@@ -45,13 +47,16 @@
     "isparta": "4.0.0",
     "json-loader": "0.5.4",
     "mocha": "3.0.2",
+    "react": "^15.4.2",
+    "react-bootstrap": "^0.30.7",
+    "react-dom": "^15.4.2",
     "sinon": "1.17.5",
     "sinon-chai": "2.8.0",
     "webpack": "1.13.2",
     "webpack-stream": "3.2.0"
   },
   "babelBoilerplateOptions": {
-    "entryFileName": "react-common.js",
+    "entryFileName": "index.js",
     "mainVarName": "reactCommon"
   }
 }

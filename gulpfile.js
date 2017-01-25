@@ -61,7 +61,11 @@ function build() {
       //   jquery: true
       // }
       // would externalize the `jquery` module.
-      externals: {},
+      externals: {
+        react: 'react',
+        'react-dom': 'react-dom',
+        'react-bootstrap': 'react-bootstrap'
+      },
       module: {
         loaders: [
           {test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'}

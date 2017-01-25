@@ -1,5 +1,10 @@
-export { default as ActionModal }  from './action-modal';
-export { default as ActiveButton } from './active-button';
-export { default as AmountInput }  from './form-controls/amount-input';
-export { default as IntegerInput } from './form-controls/integer-input';
-export { default as PhoneInput }   from './form-controls/phone-input';
+export { default as ActionModal }   from './action-modal';
+export { default as ActiveButton }  from './active-button';
+export { default as AmountInput }   from './form-controls/amount-input';
+export { default as IntegerInput }  from './form-controls/integer-input';
+export { default as PhoneInput }    from './form-controls/phone-input';
+export { default as Alert }         from './alert';
+export { default as ConfirmButton } from './confirm-button';
+export { default as FaIcon }        from './fa-icon';
+export { default as Icon }          from './icon';
+export { default as PromptButton }  from './prompt-button';

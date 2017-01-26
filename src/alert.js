@@ -25,7 +25,7 @@ class AlertComponent extends Component {
 };
 
 AlertComponent.propTypes = {
-    alertType: PropTypes.onOf(['success','warning','danger','info']),
+    alertType: PropTypes.oneOf(['success','warning','danger','info']),
     title: PropTypes.string,
     message: PropTypes.string
 };

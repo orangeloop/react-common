@@ -18482,7 +18482,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	;
 	
 	AlertComponent.propTypes = {
-	    alertType: _react.PropTypes.onOf(['success', 'warning', 'danger', 'info']),
+	    alertType: _react.PropTypes.oneOf(['success', 'warning', 'danger', 'info']),
 	    title: _react.PropTypes.string,
 	    message: _react.PropTypes.string
 	};

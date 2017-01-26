@@ -6,7 +6,15 @@ class AlertComponent extends Component {
         super(props);
 
         this.state = {
-            show: true
+            show: this.props.show
+        }
+    }
+
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.show !== this.props.show) {
+            this.setState({
+                show: nextProps.show
+            });
         }
     }
     
@@ -27,12 +35,14 @@ class AlertComponent extends Component {
 AlertComponent.propTypes = {
     alertType: PropTypes.oneOf(['success','warning','danger','info']),
     title: PropTypes.string,
-    message: PropTypes.string
+    message: PropTypes.string,
+    show: PropTypes.bool
 };
 
 AlertComponent.defaultProps = {
     title: '[Title]',
-    message: '[Message]'
+    message: '[Message]',
+    show: false
 };
 
 export default AlertComponent;

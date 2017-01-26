@@ -18447,12 +18447,21 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var _this = _possibleConstructorReturn(this, (AlertComponent.__proto__ || Object.getPrototypeOf(AlertComponent)).call(this, props));
 	
 	        _this.state = {
-	            show: true
+	            show: _this.props.show
 	        };
 	        return _this;
 	    }
 	
 	    _createClass(AlertComponent, [{
+	        key: 'componentWillReceiveProps',
+	        value: function componentWillReceiveProps(nextProps) {
+	            if (nextProps.show !== this.props.show) {
+	                this.setState({
+	                    show: nextProps.show
+	                });
+	            }
+	        }
+	    }, {
 	        key: 'render',
 	        value: function render() {
 	            var _this2 = this;
@@ -18484,12 +18493,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	AlertComponent.propTypes = {
 	    alertType: _react.PropTypes.oneOf(['success', 'warning', 'danger', 'info']),
 	    title: _react.PropTypes.string,
-	    message: _react.PropTypes.string
+	    message: _react.PropTypes.string,
+	    show: _react.PropTypes.bool
 	};
 	
 	AlertComponent.defaultProps = {
 	    title: '[Title]',
-	    message: '[Message]'
+	    message: '[Message]',
+	    show: false
 	};
 	
 	exports.default = AlertComponent;

@@ -18774,7 +18774,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                { trigger: 'click', placement: 'top', overlay: denyReason },
 	                _react2.default.createElement(
 	                    'button',
-	                    { className: this.props.buttonStyle },
+	                    { className: this.props.buttonStyle, style: { paddingTop: '3px', paddingBottom: '3px' } },
 	                    this.props.buttonText
 	                )
 	            );

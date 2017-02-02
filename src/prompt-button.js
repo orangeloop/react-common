@@ -13,7 +13,7 @@ class PromptButton extends Component {
                         <div className='input-group'>
                             <input ref={(input) => this.promptInput = input} type='text' className='form-control' placeholder={this.props.promptText} />
                             <span className='input-group-btn'>
-                                <button className='btn btn-primary' onClick={() => this.props.onConfirm(this.promptInput.value)}>OK</button>
+                                <button className='btn btn-primary' style={{paddingTop: '3px', paddingBottom: '3px'}} onClick={() => this.props.onConfirm(this.promptInput.value)}>OK</button>
                             </span>
                         </div>
                     </div>

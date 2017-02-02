@@ -20,7 +20,7 @@ class PromptButton extends Component {
                 </Popover> 
                         
         return (
-            <OverlayTrigger trigger='click' placement='top' overlay={denyReason}>
+            <OverlayTrigger trigger={['click','focus']} rootClose={true} placement='top' overlay={denyReason}>
                 <button className={this.props.buttonStyle} style={{paddingTop: '3px', paddingBottom: '3px'}}>{this.props.buttonText}</button>
             </OverlayTrigger>                               
         );        

@@ -18771,7 +18771,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	            return _react2.default.createElement(
 	                _reactBootstrap.OverlayTrigger,
-	                { trigger: ['click', 'focus'], rootClose: true, placement: 'top', overlay: denyReason },
+	                { trigger: ['click'], rootClose: true, placement: 'top', overlay: denyReason },
 	                _react2.default.createElement(
 	                    'button',
 	                    { className: this.props.buttonStyle, style: { paddingTop: '3px', paddingBottom: '3px' } },

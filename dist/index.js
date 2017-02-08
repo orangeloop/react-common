@@ -18790,7 +18790,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    promptTitle: _react.PropTypes.string,
 	    promptText: _react.PropTypes.string,
 	    buttonStyle: _react.PropTypes.string,
-	    buttonText: _react.PropTypes.string,
+	    buttonText: _react.PropTypes.oneOfType([_react.PropTypes.string, _react.PropTypes.object]),
 	    onConfirm: _react.PropTypes.func.isRequired
 	};
 	

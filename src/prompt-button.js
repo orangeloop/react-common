@@ -31,7 +31,10 @@ PromptButton.propTypes = {
     promptTitle: PropTypes.string,
     promptText: PropTypes.string,
     buttonStyle: PropTypes.string,
-    buttonText: PropTypes.string,
+    buttonText: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.object
+    ]),
     onConfirm: PropTypes.func.isRequired
 };
 

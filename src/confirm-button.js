@@ -19,7 +19,10 @@ ConfirmButton.propTypes = {
     confirmTitle: PropTypes.string,
     confirmMessage: PropTypes.string,
     buttonStyle: PropTypes.string,
-    buttonText: PropTypes.string,
+    buttonText: PropTypes.oneOfObject([
+        PropTypes.string,
+        PropTypes.object
+    ]),
     onConfirm: PropTypes.func.isRequired
 };
 

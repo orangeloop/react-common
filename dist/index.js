@@ -18554,7 +18554,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    confirmTitle: _react.PropTypes.string,
 	    confirmMessage: _react.PropTypes.string,
 	    buttonStyle: _react.PropTypes.string,
-	    buttonText: _react.PropTypes.string,
+	    buttonText: _react.PropTypes.oneOfObject([_react.PropTypes.string, _react.PropTypes.object]),
 	    onConfirm: _react.PropTypes.func.isRequired
 	};
 	

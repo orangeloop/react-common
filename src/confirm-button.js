@@ -19,7 +19,7 @@ ConfirmButton.propTypes = {
     confirmTitle: PropTypes.string,
     confirmMessage: PropTypes.string,
     buttonStyle: PropTypes.string,
-    buttonText: PropTypes.oneOfObject([
+    buttonText: PropTypes.oneOfType([
         PropTypes.string,
         PropTypes.object
     ]),

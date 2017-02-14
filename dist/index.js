@@ -18524,6 +18524,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _reactBootstrap = __webpack_require__(3);
 	
+	var _activeButton = __webpack_require__(4);
+	
+	var _activeButton2 = _interopRequireDefault(_activeButton);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var ConfirmButton = function ConfirmButton(props) {
@@ -18535,11 +18539,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	            null,
 	            props.confirmMessage
 	        ),
-	        _react2.default.createElement(
-	            'button',
-	            { className: 'btn btn-success btn-block', onClick: props.onConfirm },
-	            'Yes'
-	        )
+	        _react2.default.createElement(_activeButton2.default, {
+	            buttonStyle: 'success',
+	            block: true,
+	            title: 'Yes',
+	            active: props.active,
+	            onClick: props.onConfirm })
 	    );
 	
 	    return _react2.default.createElement(
@@ -18558,6 +18563,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    confirmMessage: _react.PropTypes.string,
 	    buttonStyle: _react.PropTypes.string,
 	    buttonText: _react.PropTypes.oneOfType([_react.PropTypes.string, _react.PropTypes.object]),
+	    active: _react.PropTypes.bool,
 	    onConfirm: _react.PropTypes.func.isRequired
 	};
 	
@@ -18565,7 +18571,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    confirmTitle: 'Are you sure?',
 	    confirmMessage: 'Are you sure?',
 	    buttonStyle: 'btn btn-primary',
-	    buttonText: 'Confirm'
+	    buttonText: 'Confirm',
+	    active: false
 	};
 	
 	exports.default = ConfirmButton;

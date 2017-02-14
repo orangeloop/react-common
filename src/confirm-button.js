@@ -1,11 +1,17 @@
 import React, {PropTypes}       from 'react';
 import {OverlayTrigger,Popover} from 'react-bootstrap';
+import ActiveButton             from './active-button';
 
 const ConfirmButton = (props) => {
     const confirmPopover = 
             <Popover title={props.confirmTitle} id={props.confirmTitle}>
                 <p>{props.confirmMessage}</p>
-                <button className='btn btn-success btn-block' onClick={props.onConfirm}>Yes</button>
+                <ActiveButton
+                    buttonStyle="success"
+                    block={true}
+                    title="Yes"
+                    active={props.active}
+                    onClick={props.onConfirm} />
             </Popover> 
                     
     return (
@@ -23,6 +29,7 @@ ConfirmButton.propTypes = {
         PropTypes.string,
         PropTypes.object
     ]),
+    active: PropTypes.bool,
     onConfirm: PropTypes.func.isRequired
 };
 
@@ -30,7 +37,8 @@ ConfirmButton.defaultProps = {
     confirmTitle: 'Are you sure?',
     confirmMessage: 'Are you sure?',
     buttonStyle: 'btn btn-primary',
-    buttonText: 'Confirm'
+    buttonText: 'Confirm',
+    active: false
 };
 
 export default ConfirmButton;

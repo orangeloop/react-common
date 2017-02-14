@@ -5,6 +5,7 @@ const ActiveButton = (props) => {
     return (
         <Button 
             bsStyle={props.buttonStyle}
+            block={props.block}
             onClick={props.onClick}
             disabled={props.active || !props.enabled}>
             {props.active?<i className="fa fa-circle-o-notch fa-spin"></i>:<span>{props.title}</span>}

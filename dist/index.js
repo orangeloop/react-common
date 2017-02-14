@@ -305,6 +305,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        _reactBootstrap.Button,
 	        {
 	            bsStyle: props.buttonStyle,
+	            block: props.block,
 	            onClick: props.onClick,
 	            disabled: props.active || !props.enabled },
 	        props.active ? _react2.default.createElement('i', { className: 'fa fa-circle-o-notch fa-spin' }) : _react2.default.createElement(

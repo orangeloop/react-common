@@ -17,13 +17,15 @@ ActiveButton.propTypes = {
     enabled: PropTypes.bool,
     active: PropTypes.bool,
     title: PropTypes.string.isRequired,
-    onClick: PropTypes.func.isRequired
+    onClick: PropTypes.func.isRequired,
+    block: PropTypes.bool
 };
 
 ActiveButton.defaultProps = {
     buttonStyle: 'default',
     active: false,
-    enabled: true
+    enabled: true,
+    block: false
 };
 
 export default ActiveButton;

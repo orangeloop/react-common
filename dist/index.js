@@ -320,13 +320,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	    enabled: _react.PropTypes.bool,
 	    active: _react.PropTypes.bool,
 	    title: _react.PropTypes.string.isRequired,
-	    onClick: _react.PropTypes.func.isRequired
+	    onClick: _react.PropTypes.func.isRequired,
+	    block: _react.PropTypes.bool
 	};
 	
 	ActiveButton.defaultProps = {
 	    buttonStyle: 'default',
 	    active: false,
-	    enabled: true
+	    enabled: true,
+	    block: false
 	};
 	
 	exports.default = ActiveButton;

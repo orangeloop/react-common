@@ -320,7 +320,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    buttonStyle: _react.PropTypes.oneOf(['primary', 'default', 'danger', 'info', 'warning', 'success']),
 	    enabled: _react.PropTypes.bool,
 	    active: _react.PropTypes.bool,
-	    title: _react.PropTypes.string.isRequired,
+	    title: _react.PropTypes.oneOfType([_react.PropTypes.string, _react.PropTypes.object]).isRequired,
 	    onClick: _react.PropTypes.func.isRequired,
 	    block: _react.PropTypes.bool
 	};

@@ -17,7 +17,10 @@ ActiveButton.propTypes = {
     buttonStyle: PropTypes.oneOf(['primary','default','danger','info','warning','success']),
     enabled: PropTypes.bool,
     active: PropTypes.bool,
-    title: PropTypes.string.isRequired,
+    title: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.object
+    ]).isRequired,
     onClick: PropTypes.func.isRequired,
     block: PropTypes.bool
 };

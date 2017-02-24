@@ -318,6 +318,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	ActiveButton.propTypes = {
 	    buttonStyle: _react.PropTypes.oneOf(['primary', 'default', 'danger', 'info', 'warning', 'success']),
+	    buttonSize: _react.PropTypes.oneOf(['lg', 'large', 'sm', 'small', 'xs', 'xsmall']),
 	    enabled: _react.PropTypes.bool,
 	    active: _react.PropTypes.bool,
 	    title: _react.PropTypes.oneOfType([_react.PropTypes.string, _react.PropTypes.object]).isRequired,
@@ -327,6 +328,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	ActiveButton.defaultProps = {
 	    buttonStyle: 'default',
+	    buttonSize: 'small',
 	    active: false,
 	    enabled: true,
 	    block: false

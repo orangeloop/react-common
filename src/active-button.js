@@ -15,6 +15,7 @@ const ActiveButton = (props) => {
 
 ActiveButton.propTypes = {
     buttonStyle: PropTypes.oneOf(['primary','default','danger','info','warning','success']),
+    buttonSize: PropTypes.oneOf(['lg','large','sm','small','xs','xsmall']),
     enabled: PropTypes.bool,
     active: PropTypes.bool,
     title: PropTypes.oneOfType([
@@ -27,6 +28,7 @@ ActiveButton.propTypes = {
 
 ActiveButton.defaultProps = {
     buttonStyle: 'default',
+    buttonSize: 'small',
     active: false,
     enabled: true,
     block: false

@@ -305,6 +305,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        _reactBootstrap.Button,
 	        {
 	            bsStyle: props.buttonStyle,
+	            bsSize: props.buttonSize,
 	            block: props.block,
 	            onClick: props.onClick,
 	            disabled: props.active || !props.enabled },

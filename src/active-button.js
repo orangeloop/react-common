@@ -5,6 +5,7 @@ const ActiveButton = (props) => {
     return (
         <Button 
             bsStyle={props.buttonStyle}
+            bsSize={props.buttonSize}
             block={props.block}
             onClick={props.onClick}
             disabled={props.active || !props.enabled}>
